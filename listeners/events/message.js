@@ -1,6 +1,6 @@
-const ServerDB = require("../models/servers")
-const ms = require('parse-ms');
-const { MessageEmbed } = require("discord.js");
+const ServerDB = require ('../../mongo/serverSchema');
+const ms = require ('parse-ms');
+const { MessageEmbed } = require ("discord.js");
 const ratetime = new Set()
 
 module.exports = async (client, message) => {
