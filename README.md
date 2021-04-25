@@ -9,6 +9,7 @@ This bot is still a **huge** work in progress and I will be adding commands to t
 
 ## Self Hosting
 * Download this Repo to a Directory of your Choice.
+* Configure the `config.js` file to your liking.
 * Open Command Prompt or Terminal and CD Into the Directory.
 * Run `npm install`
 * Run `npm start` 
