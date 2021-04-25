@@ -31,7 +31,7 @@ if (client.snipe.has(message.guild.id)) {
 
 module.exports.help = {
     name: "snipe",
-    category: "moderation",
+    category: "utils",
     aliases: [],
     description: "Snipe previously deleted messages or images!",
     example: "``snipe``"
