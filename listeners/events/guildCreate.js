@@ -6,7 +6,7 @@ module.exports = async (client, guild) => {
     const IntializeDB = new ServersDB({
         ServerID: guild.id,
         ServerPrefix: 'dp.',
-        AuditLogs: 'purge-logs'
+        AuditLogs: { Type: String, default: 'purge-logs' }
     });
 
     IntializeDB.save()
