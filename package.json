@@ -13,14 +13,16 @@
     },
     "keywords": [
         "discord.js",
-        "Purge bot"
+        "purge bot",
+        "discord bot",
+        "moderation"
     ],
     "bugs": {
         "url": "https://github.com/TheRealToxicDev/DisPurge/issues"
     },
     "homepage": "https://github.com/TheRealToxicDev/DisPurge#readme",
-    "author": "dexter",
-    "license": "ISC",
+    "author": "TheRealToxicDev",
+    "license": "MIT",
     "dependencies": {
         "discord.js": "^12.3.1",
         "ejs": "^3.1.5",
