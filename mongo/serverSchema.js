@@ -2,7 +2,7 @@ const mongo = require ('mongoose');
 
 const servers = mongo.Schema({
     ServerID: String,
-    ServerPrefix: { Type: String, default: 'dp.' },
+    ServerPrefix: String,
     AuditLogs: { Type: String, default: 'purge-logs' },
 });
 
