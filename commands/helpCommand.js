@@ -6,7 +6,7 @@ module.exports.run = (client , message, args) => {
 
     let prefix = 'dp.'
 
-    servers.findOne({
+    ServerDB.findOne({
         ServerID: message.guild.id}, (err, res) => {
             
     if(!res){
