@@ -17,8 +17,19 @@ This bot is still a **huge** work in progress and I will be adding commands to t
 
 --- 
 
+## Commands
+
+| Command     | Category    | Description           |
+| ----------- | ----------- | --------------------- |
+| Help     | Info       | The bots Help Command |
+| Prefix   | Configuration        | Set the Bots Prefix   | 
+
+---
+
 ## Support
 * https://cordx.wtf/discord
+* https://twitter.com/TheRealToxicDev
+* https://twitter.com/ChillCordDev
 
 ---
 
