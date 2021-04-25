@@ -3,7 +3,7 @@ const ms = require('parse-ms');
 const { MessageEmbed } = require("discord.js");
 const ratetime = new Set()
 
-module.exports = (client, message) => {
+module.exports = async (client, message) => {
 
     if (message.author.bot) return;
 
