@@ -1,5 +1,5 @@
 // Change this to 'TOken_Here' if you want
-exports.token= process.env.TOKEN
+exports.token=process.env.TOKEN
 
 /** THIS IS A LIST OF IDS FOR PEOPLE YOU TRUST WITH TTHINGS LIKE THE EVAL COMMAND */
 exports.owners= [
@@ -9,4 +9,4 @@ exports.owners= [
 ]
 
 /** MONGO DB CONNECTION STRING */
-exports.mongo_url= process.env.MONGO_DB
+exports.mongo_url=process.env.MONGO_DB
