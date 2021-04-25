@@ -21,8 +21,15 @@ This bot is still a **huge** work in progress and I will be adding commands to t
 
 | Command     | Category    | Description           |
 | ----------- | ----------- | --------------------- |
-| Help     | Info       | The bots Help Command |
-| Prefix   | Configuration        | Set the Bots Prefix   | 
+| Help     | Info       | The bots Help Command.    |
+| About    | Info       | Some into about the Bot.  |
+| Invite   | Info       | Link to Invite the Bot.   |
+| Uptime   | Info       | Time since last Restart.  |
+| Prefix   | Config     | Set the bots Prefix.      |
+| Purge    | Mods       | Purge a specified amount of messages. |
+| Snipe    | Util       | See a message a user has deleted |
+| Eval 
+
 
 ---
 
