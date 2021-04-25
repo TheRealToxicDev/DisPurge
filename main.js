@@ -1,5 +1,5 @@
-const Bot = require('./client/index');
-const Web = require('./web/index');
+const Bot = require('./index');
+const Web = require('./utils/website');
 
 const { PORT, TOKEN, MONGO_DB } = process.env;
 
