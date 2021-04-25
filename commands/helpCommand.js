@@ -52,6 +52,8 @@ module.exports.run = (client , message, args) => {
 
     let config_commands = client.commands.filter(cmd => cmd.help.category == 'config')
 
+    let utils_commands = client.commands.filter(cmd => cmd.help.category == 'utils')
+
     let admin_commands = client.commands.filter(cmd => cmd.help.category == 'moderation')
 
     let owner_commands = client.commands.filter(cmd => cmd.help.category == 'owner')
@@ -63,6 +65,7 @@ module.exports.run = (client , message, args) => {
       embed.addField('Information', info_commands.map(cmd => "``" + cmd.help.name + "``" ).join("** , **"), true)
       embed.addField('Moderation', admin_commands.map(cmd => "``" + cmd.help.name + "``" ).join("** , **"), true)
       embed.addField('Configuration', config_commands.map(cmd => "``" + cmd.help.name + "``" ).join("** , **"), true)
+      embed.addField('Utilitys', utils_commands.map(cmd => "``" + cmd.help.name + "``" ).join("** , **"), true)
 
       if (client.config.owners.includes(message.author.id)) {
         embed.addField('Owners Only', owner_commands.map(cmd => "``" + cmd.help.name + "``" ).join("** , **"), true)
