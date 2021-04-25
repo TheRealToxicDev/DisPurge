@@ -21,4 +21,8 @@ commands.run(client);
 const events = require ('./utils/events');
 events.run(client);
 
-client.login(client.config.token);
+module.exports.init = async (token) => {
+    client.userBaseDirectory = __dirname;
+     await client.login(token);
+    return client;
+}
