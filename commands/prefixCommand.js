@@ -25,7 +25,7 @@ module.exports.run = async (client, message, args) => {
     if (new_prefix.length > 10) return message.channel.send(tomany_args);
     
         let missing_args = new MessageEmbed()
-       .setAuthor('Error: Missing Args', EmbedComponents.embedImage)
+       .setAuthor('Error: Missing Args', EmbedConfig.image)
        .setColor(ErrorEmbedConfig.ember_color)
        .setDescription('Please provide the required args ``dp.prefix newPrefix``')
        .addField('Default Prefix', 'dp.', true)
