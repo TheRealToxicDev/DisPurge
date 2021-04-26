@@ -71,7 +71,8 @@ module.exports.help = {
 module.exports.requirements = {
     userPerms: [],
     clientPerms: ["SEND_MESSAGES"],
-    ownerOnly: false
+    ownerOnly: false,
+    devMode: true
 }
 
 module.exports.limits = {
