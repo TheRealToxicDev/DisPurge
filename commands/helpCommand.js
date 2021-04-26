@@ -40,7 +40,7 @@ module.exports.run = async (client , message, args) => {
         let embed = new MessageEmbed()
            embed.setAuthor(`${cmdname} Command Info`, EmbedConfig.image)
            embed.setColor(EmbedConfig.blurple)
-           embed.setDescription(`${cmdname.help.description}`)
+           embed.setDescription(`${cmd.help.description}`)
            embed.addField('Prefix', `${prefix}`, true)
            embed.addField('Category', `${cmd.help.category}`, true)
            embed.addField('Examples', `${cmd.help.example}`, true)
