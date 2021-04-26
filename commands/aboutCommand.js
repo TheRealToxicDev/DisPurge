@@ -2,7 +2,9 @@ const { MessageEmbed } = require ('discord.js');
 const moment = require ('moment');
 const EmbedConfig = require ('../listeners/embeds/main');
 
-module.exports.run = (client , message, args) => {
+module.exports.run = async (client , message, args) => {
+
+ await message.delete().catch(() => {})
 
  let embed = new MessageEmbed()
    embed.setAuthor('A bit about me', EmbedConfig.image)
