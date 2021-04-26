@@ -1,17 +1,22 @@
 const { MessageEmbed } = require ('discord.js');
 const EmbedConfig = require ('../listeners/embeds/main');
 
-module.exports.run = (client , message, args) => {
+module.exports.run = async (client , message, args) => {
 
- message.delete().catch()
+    message.delete().catch()
+
+     await Promise.all([
+         client.destroy(),
+         client.login(client.config.token)]
+     );
 
  let embed = new MessageEmbed()
-   embed.setAuthor('Woah, Is it bad?', EmbedConfig.image)
+   embed.setAuthor('Im back baby!!', EmbedConfig.image)
    embed.setColor(EmbedConfig.blurple)
-   embed.setDescription("``" + duration(client.uptime) + "``")
+   embed.setDescription("Restart Successful")
    embed.setFooter(EmbedConfig.footer, EmbedConfig.image)
 
-   message.channel.send(embed)
+   return message.channel.send(embed)
  }
 
 module.exports.help = {
