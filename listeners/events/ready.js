@@ -66,7 +66,8 @@ module.exports = async (client) => {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                servers: client.guilds.cache.size
+                servers: client.guilds.cache.size,
+                shards: '1'
             })
         }).then(async res => console.log(await res.json()))
 
