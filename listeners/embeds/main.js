@@ -1,4 +1,4 @@
-exports.image = 'https://api.toxicdev.me/images/D75E2AD5-B95A-4C6F-92E9-8FDBF78FCC51.png' // The Image for the Bots Embed Messages (Used for SetAuthor() and SetFooter())
+exports.image = 'https://cdn.dispurge.xyz/images/png/7F07F21C-9C69-4743-816A-CFDF5596785A.png' // The Image for the Bots Embed Messages (Used for SetAuthor() and SetFooter())
 
 exports.blurple = '#7289DA' // The Color for the Bots Embed Messages.
 
