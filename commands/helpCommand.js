@@ -54,7 +54,7 @@ module.exports.run = (client , message, args) => {
 
     let utils_commands = client.commands.filter(cmd => cmd.help.category == 'utils')
 
-    let admin_commands = client.commands.filter(cmd => cmd.help.category == 'moderation')
+    let purge_commands = client.commands.filter(cmd => cmd.help.category == 'purging')
 
     let owner_commands = client.commands.filter(cmd => cmd.help.category == 'owner')
 
@@ -63,7 +63,7 @@ module.exports.run = (client , message, args) => {
       embed.setColor(EmbedConfig.blurple)
       embed.setDescription('Feeling lost? Hopefully this will help!')
       embed.addField('Information', info_commands.map(cmd => "``" + cmd.help.name + "``" ).join("** , **"), true)
-      embed.addField('Moderation', admin_commands.map(cmd => "``" + cmd.help.name + "``" ).join("** , **"), true)
+      embed.addField('Purging', purge_commands.map(cmd => "``" + cmd.help.name + "``" ).join("** , **"), true)
       embed.addField('Configuration', config_commands.map(cmd => "``" + cmd.help.name + "``" ).join("** , **"), true)
       embed.addField('Utilitys', utils_commands.map(cmd => "``" + cmd.help.name + "``" ).join("** , **"), true)
 
