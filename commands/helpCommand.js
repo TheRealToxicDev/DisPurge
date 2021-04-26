@@ -2,7 +2,9 @@ const { MessageEmbed } = require ('discord.js')
 const ServerDB = require ('../mongo/serverSchema')
 const EmbedConfig = require ('../listeners/embeds/main')
 
-module.exports.run = (client , message, args) => {
+module.exports.run = async (client , message, args) => {
+
+    await message.delete().catch(() => {})
 
     let prefix = 'dp.'
 
