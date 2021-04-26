@@ -6,7 +6,9 @@ const EmbedConfig = require ('../listeners/embeds/main');
 const ErrorEmbedConfig = require ('../listeners/embeds/errors');
 
 module.exports.run = async (client, message, args) => {
-    
+
+    await message.delete().catch(() => {})
+
     let guild = await ServersDB.findOne({ ServerID: message.guild.id });
 
     if (!guild) await new ServersDB({ ServerID: message.guild.id }).save();
