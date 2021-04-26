@@ -58,7 +58,7 @@ module.exports.help = {
     category: "purging",
     aliases: ['p90'],
     description: "Bulk Delete 90 messages under 14 days old!",
-    example: "``purge50``"
+    example: "``purge90``"
 }
 
 module.exports.requirements = {
