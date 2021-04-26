@@ -42,6 +42,8 @@ module.exports = async (client, message) => {
     
         if(cmd.requirements.ownerOnly && !client.config.owners.includes(message.author.id))
         return message.reply("Access Denied (Owner Only)")
+        if(cmd.requirements.devMode && !client.config.owners.includes(message.author.id))
+        return message.reply("This command is still being developed and is locked to my Developers, Check back later!!!")
         let embed = new MessageEmbed()
         .setAuthor("Lacking Permissions ❌", message.author.displayAvatarURL({dynamic: true}))
         .addField(`You are missing the following permissions`, missingPerms(message.member, cmd.requirements.userPerms))
