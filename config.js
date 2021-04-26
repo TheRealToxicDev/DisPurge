@@ -12,3 +12,4 @@ exports.owners= [
 exports.mongo_url=process.env.MONGO_DB
 
 exports.infinity_votes='https://infinitybotlist.com/bots/835997853263462461/vote'
+exports.fates_votes='https://fateslist.xyz/bot/835997853263462461/vote'
