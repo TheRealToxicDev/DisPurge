@@ -11,4 +11,4 @@ exports.owners= [
 /** MONGO DB CONNECTION STRING */
 exports.mongo_url=process.env.MONGO_DB
 
-exports.infinity_votes=https://infinitybotlist.com/bots/835997853263462461/vote
+exports.infinity_votes='https://infinitybotlist.com/bots/835997853263462461/vote'
