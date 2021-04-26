@@ -27,7 +27,7 @@ module.exports.run = async (client , message, args) => {
     if (!isUser) {
 
     let not_found = new MessageEmbed()
-      .setAuthor(`Error: Staff Check Failed`, client.user.displayAvatarURL())
+      .setAuthor(`Error: Purge Check Failed`, client.user.displayAvatarURL())
       .setColor(ErrorEmbedConfig.ember_color)
       .setDescription('I cannot find that user, Are you sure they are in my DB ?')
       .setFooter(EmbedConfig.footer, EmbedConfig.image)
@@ -37,7 +37,7 @@ module.exports.run = async (client , message, args) => {
     } else {
 
         const embed = new MessageEmbed()
-          .setAuthor(`GET: Purge Check`, EmbedConfig.image)
+          .setAuthor(`Action: Purge Check`, EmbedConfig.image)
           .setColor(EmbedConfig.blurple)
           .setDescription(`Purge info for ${isUser.Username}`)
           .addField('Last Purge Amount', isUser.LastPurge.get('MessageChannel'), true)
