@@ -39,7 +39,7 @@ module.exports.run = async (client , message, args) => {
                    logs.addField('Amount', '`10`', true)
                    logs.setFooter(EmbedConfig.footer, EmbedConfig.image)
         
-                channel.send(logs)
+                await channel.send(logs)
        }
    });
 
