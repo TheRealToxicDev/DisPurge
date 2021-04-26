@@ -25,7 +25,7 @@ module.exports.run = async (client , message, args) => {
       success.setDescription(`Log Channel has been set to ${final_logchannel}`)
       success.setFooter(EmbedConfig.footer, EmbedConfig.image)
 
-      message.channel.send(success)
+      return message.channel.send(success)
 }
 
 module.exports.help = {
