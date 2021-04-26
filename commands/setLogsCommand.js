@@ -13,16 +13,14 @@ module.exports.run = async (client , message, args) => {
 
    let logchannel = args.slice(0).join(" ")
 
-   if (!logchannel) return message.channel.send('Please mention a Channel')
+   if (!logchannel) return message.channel.send('Please provide a valid Channel ID');
 
-   let final_logchannel = await message.guild.channels.cache.get(logchannel)
-
-   await ServerDB.updateOne({ ServerID: message.guild.id}, {$set: { AuditLogs: final_logchannel.id }})
+   await ServerDB.updateOne({ ServerID: message.guild.id}, {$set: { AuditLogs: logchannel }})
 
     let success = new MessageEmbed()
       success.setAuthor('Action: Set Logs', EmbedConfig.image)
       success.setColor(EmbedConfig.blurple)
-      success.setDescription(`Log Channel has been set to ${final_logchannel.name}`)
+      success.setDescription(`Log Channel has been set to <#${logchannel}>`)
       success.setFooter(EmbedConfig.footer, EmbedConfig.image)
 
       return message.channel.send(success)
