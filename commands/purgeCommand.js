@@ -85,7 +85,7 @@ module.exports.run = async (client , message, args) => {
 
 module.exports.help = {
     name: "purge",
-    category: "moderation",
+    category: "purging",
     aliases: ['clear','prune'],
     description: "Bulk Delete messages under 14 days old!",
     example: "``purge <number>``"
