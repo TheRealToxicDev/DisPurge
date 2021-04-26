@@ -19,11 +19,11 @@ module.exports.run = (client , message, args) => {
  }
 
 module.exports.help = {
-    name: "about",
+    name: "stats",
     category: "info",
-    aliases: [],
-    description: "Tells you a bit about DisPurge!!",
-    example: "``about``"
+    aliases: ["statistics"],
+    description: "Show you some of my stats!!",
+    example: "``stats``"
 }
 
 module.exports.requirements = {
