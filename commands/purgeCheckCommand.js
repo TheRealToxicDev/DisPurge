@@ -15,8 +15,8 @@ module.exports.run = async (client , message, args) => {
        let no_args = new MessageEmbed()
       .setAuthor(`Error: Missing Args`, EmbedConfig.image)
       .setColor(ErrorEmbedConfig.ember_color)
-      .setDescription('Please provide a staff member to fetch stats for!')
-      .addField('Note', 'This can be a @Mention or ID', true)
+      .setDescription('Please provide a user to fetch info for!')
+      .addField('Note', 'This can be a @Mention or User ID', true)
       .setFooter(EmbedConfig.footer, EmbedConfig.image)
 
 
