@@ -33,10 +33,10 @@ module.exports.run = async (client , message, args) => {
             if(channel){
 
                 let logs = new MessageEmbed()
-                   logs.setAuthor('Action: Purge', EmbedConfig.image)
+                   logs.setAuthor('Action: Purge 10', EmbedConfig.image)
                    logs.setColor(EmbedConfig.blurple)
-                   logs.addField('Mod', `${message.author.username}`, true)
-                   logs.addField('Amount', '`10`', true)
+                   logs.addField('Purged By', `${message.author.username}`, true)
+                   logs.addField('Purged Amount', '`10` Messages', true)
                    logs.setFooter(EmbedConfig.footer, EmbedConfig.image)
         
                 await channel.send(logs)
