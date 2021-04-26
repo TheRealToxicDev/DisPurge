@@ -57,7 +57,18 @@ module.exports = async (client) => {
    client.user.setActivity(activities[i].name, activities[i].options);
     i++;
   }, 30000);
-  
+
+        fetch(`https://api.infinitybotlist.com/bot/835997853263462461 `, {
+            method: "POST",
+            headers: {
+                "authorization": process.env.IBL_AUTH,
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                servers: client.guilds.cache.size
+            })
+        }).then(async res => console.log(await res.json()))
+    }
 
   console.log(`Signed in as ${client.user.username} || Loaded [${eventFiles2.length}] event(s) & [${client.commands.size}] command(s)`);
 }
