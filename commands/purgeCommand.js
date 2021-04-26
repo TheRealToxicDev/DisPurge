@@ -50,7 +50,7 @@ module.exports.run = async (client , message, args) => {
     let success = new MessageEmbed()
       success.setAuthor('Purge Complete', EmbedConfig.image)
       success.setColor(EmbedConfig.blurple)
-      success.setDescription(`I have purged ``${args[0]}`` messages from this channel.`)
+      success.setDescription(`I have purged ${args[0]} messages from this channel.`)
       success.setFooter(EmbedConfig.footer, EmbedConfig.image)
 
       message.channel.send(success)
