@@ -4,6 +4,8 @@ const EmbedConfig = require ('../listeners/embeds/main');
 
 module.exports.run = (client , message, args) => {
 
+ await message.delete().catch(() => {})
+
  let embed = new MessageEmbed()
    embed.setAuthor('DisPurge Statistics', EmbedConfig.image)
    embed.setColor(EmbedConfig.blurple)
