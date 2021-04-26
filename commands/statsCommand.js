@@ -14,7 +14,7 @@ module.exports.run = async (client , message, args) => {
    embed.addField('Guild Count', `${client.guilds.cache.size} Guilds`, true)
    embed.addField('Command Count', `${client.commands.size} Commands`, true)
    embed.addField('DisPurge Ping', `${client.ws.ping}ms`, true)
-   embed.addField('Vote Links', `[Infinity Bots](${client.config.infinity_votes})`, true)
+   embed.addField('Vote Links', `[Infinity Bots](${client.config.infinity_votes}) | [Fates List](${client.config.fates_votes})`, true)
    embed.setFooter(EmbedConfig.footer, EmbedConfig.image)
 
    message.channel.send(embed)
