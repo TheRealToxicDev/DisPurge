@@ -68,7 +68,6 @@ module.exports = async (client) => {
                 servers: client.guilds.cache.size
             })
         }).then(async res => console.log(await res.json()))
-    }
 
   console.log(`Signed in as ${client.user.username} || Loaded [${eventFiles2.length}] event(s) & [${client.commands.size}] command(s)`);
 }
