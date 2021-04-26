@@ -22,7 +22,7 @@ module.exports.run = async (client , message, args) => {
 
     if (!user || user.bot) return message.channel.send(no_args);
 
-    let isUser = await Users.findOne({ UserID: user.id }, { _id: false });
+    let isUser = await UsersDB.findOne({ UserID: user.id }, { _id: false });
 
     if (!isUser) {
 
