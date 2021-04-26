@@ -17,7 +17,7 @@ module.exports.run = async (client , message, args) => {
 
    let final_logchannel = logchannel.name || logchannel.id
 
-   await ServerDB.updateOne({ ServerID: message.guild.id, {$set: { AuditLogs: final_logchannel }})
+   await ServerDB.updateOne({ ServerID: message.guild.id}, {$set: { AuditLogs: final_logchannel }})
 
     let success = new MessageEmbed()
       success.setAuthor('Action: Set Logs', EmbedConfig.image)
