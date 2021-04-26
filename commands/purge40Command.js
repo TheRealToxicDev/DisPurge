@@ -26,7 +26,7 @@ module.exports.run = async (client , message, args) => {
       message.channel.send(success)
 
     ServerDB.findOne({
-        ServerID: message.guild.id}, (err, res) => {
+        ServerID: message.guild.id}, async (err, res) => {
             
             let channel = message.guild.channels.cache.get(res.AuditLogs)
        
@@ -39,7 +39,7 @@ module.exports.run = async (client , message, args) => {
                    logs.addField('Amount', '`40`', true)
                    logs.setFooter(EmbedConfig.footer, EmbedConfig.image)
         
-                channel.send(logs)
+                await channel.send(logs)
        }
    });
 
