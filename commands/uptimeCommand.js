@@ -3,6 +3,8 @@ const EmbedConfig = require ('../listeners/embeds/main');
 
 module.exports.run = (client , message, args) => {
 
+await message.delete().catch(() => {})
+
 function duration(ms) {
 
     const sec = Math.floor((ms / 1000) % 60).toString()
