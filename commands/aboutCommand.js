@@ -10,6 +10,8 @@ module.exports.run = (client , message, args) => {
    embed.setDescription('DisPurge is a simple bot written in Discord.js to allow better control over Purging Messages in a Discord Server.')
    embed.addField('Developer(s)', 'Towoxic Dev#4200 | PrettyChillDev#0420', true)
    embed.addField('Created On', moment(client.createdAt).format('MM/DD/YYYY HH:mm:ss A'), true)
+   embed.addField('GitHub Repo', 'https://api.toxicdev.me/bots/dispurge/git', true)
+   embed.addField('Support Server', 'https://cordx.wtf/discord', true)
    embed.setFooter(EmbedConfig.footer, EmbedConfig.image)
 
    message.channel.send(embed)
