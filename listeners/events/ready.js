@@ -5,6 +5,7 @@ const filePath2 = join(__dirname, "..", "events");
 const eventFiles2 = readdirSync(filePath2);
 const timers = require("timers");
 
+const fetch = require ('node-fetch');
 const mongo = require ('mongoose');
 
 mongo.connect(process.env.MONGO_DB, {
