@@ -10,10 +10,14 @@ module.exports.run = async (client , message, args) => {
 
     let user = await UsersDB.findOne({ UserID: message.author.id })
 
-    if (!user) await new UsersDB({
+    if (!user) {
+        const NewUser = await new UsersDB({
         UserID: message.author.id,
         Username: message.author.username
     });
+        
+    NewUser.save()
+  }
 
     if (isNaN(args[0])) {
 
