@@ -21,4 +21,4 @@ commands.run(client);
 const events = require ('./utils/events');
 events.run(client);
 
-client.login(client.config.token);
+client.login(client.config.token); // Login to Discord
