@@ -1,4 +1,5 @@
 const ServerDB = require ('../../mongo/serverSchema');
+const UserDB = require ('../../mongo/userSchema');
 const ms = require ('parse-ms');
 const { MessageEmbed } = require ("discord.js");
 const ratetime = new Set()
@@ -9,6 +10,17 @@ module.exports = async (client, message) => {
 
     if (message.guild) {
         if (!message.guild.me.hasPermission('SEND_MESSAGES')) return;
+    }
+    
+    let user = await UserDB.findOne({ UserID: message.author.id });
+    
+    if (!user) {
+     const NewUser = new UserDB({
+        UserID: message.author.id,
+        Username: message.author.username,
+     });
+        
+        NewUser.save()
     }
 
     await ServerDB.findOne({
