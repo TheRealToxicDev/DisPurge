@@ -40,8 +40,8 @@ module.exports.run = async (client , message, args) => {
           .setAuthor(`Action: Purge Check`, EmbedConfig.image)
           .setColor(EmbedConfig.blurple)
           .setDescription(`Purge info for ${isUser.Username}`)
-          .addField('Last Purge Amount', isUser.LastPurge.get('MessageChannel'), true)
-          .addField('Last Purge Channel', isUser.LastPurge.get('Amount'), true)
+          .addField('Last Purge Amount', isUser.LastPurge.get('Amount'), true)
+          .addField('Last Purge Channel', isUser.LastPurge.get('MessageChannel'), true)
           .setFooter(EmbedConfig.footer, EmbedConfig.image)
 
           return message.channel.send(embed)
@@ -72,7 +72,7 @@ module.exports.requirements = {
     userPerms: [],
     clientPerms: ["SEND_MESSAGES"],
     ownerOnly: false,
-    devMode: true
+    devMode: false
 }
 
 module.exports.limits = {
