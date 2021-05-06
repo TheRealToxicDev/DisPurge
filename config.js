@@ -1,5 +1,5 @@
 // Change this to 'TOken_Here' if you want
-exports.token='ODM1OTk3ODUzMjYzNDYyNDYx.YIXlrA.wg0YBOEN0FuThfhazyyBmk1GdU8'
+exports.token=
 
 /** THIS IS A LIST OF IDS FOR PEOPLE YOU TRUST WITH TTHINGS LIKE THE EVAL COMMAND */
 exports.owners= [
