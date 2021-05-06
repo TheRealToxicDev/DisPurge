@@ -1,4 +1,4 @@
-# DisPurge
+# DisPurge!
 Simple bot written in Discord.js to allow better control over Purging Messages in a Discord Server.
 
 When a user purges a message the users name and amount of messages purged are saved to the Bots Database.
