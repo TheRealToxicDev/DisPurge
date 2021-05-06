@@ -8,7 +8,7 @@ const timers = require("timers");
 const fetch = require ('node-fetch');
 const mongo = require ('mongoose');
 
-mongo.connect(process.env.MONGO_DB, {
+mongo.connect(client.config.mongo_url, {
   useNewUrlParser: true,
   useUnifiedTopology: true},(err) => {
   if (err) return console.error(err);
