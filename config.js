@@ -1,5 +1,5 @@
 // Change this to 'TOken_Here' if you want
-exports.token=
+exports.token=process.env.TOKEN
 
 /** THIS IS A LIST OF IDS FOR PEOPLE YOU TRUST WITH TTHINGS LIKE THE EVAL COMMAND */
 exports.owners= [
@@ -9,9 +9,9 @@ exports.owners= [
 ]
 
 /** MONGO DB CONNECTION STRING */
-exports.mongo_url='mongodb://mongo:CSPpLeZAQeHHFFVrEsrc@containers-us-west-5.railway.app:7680'
-exports.MONGO_DB='mongodb://mongo:CSPpLeZAQeHHFFVrEsrc@containers-us-west-5.railway.app:7680'
+exports.mongo_url=process.env.MONGO
 
 exports.infinity_votes='https://infinitybotlist.com/bots/835997853263462461/vote'
 exports.fates_votes='https://fateslist.xyz/bot/835997853263462461/vote'
-exports.IBL_AUTH='VRBfPyS4iGETV8JQqbFEmRNkWSZvkbjjCSTjlywuyH1LuMgHfKGMvcPNkIY5Ucflcyfq11v2TlafKkEzN6468IuwXXgPekdPUp8n'
+
+exports.ibl_auth=process.env.IBL_AUTH
