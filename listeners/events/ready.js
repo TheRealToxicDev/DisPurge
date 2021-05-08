@@ -58,8 +58,13 @@ module.exports = async (client) => {
    client.user.setActivity(activities[i].name, activities[i].options);
     i++;
   }, 30000);
+  
+  const Infinity = require("infinityapi.js")
+  const ibl = new Infinity(client.user.id, process.env.IBL_AUTH)
+  
+  ibl.post(client.guilds.cache.size, '0') // Server Count and 0 Shards
 
-        fetch(`https://api.infinitybotlist.com/bot/835997853263462461 `, {
+        /** fetch(`https://api.infinitybotlist.com/bot/835997853263462461 `, {
             method: "POST",
             headers: {
                 "authorization": process.env.IBL_AUTH,
@@ -69,7 +74,7 @@ module.exports = async (client) => {
                 servers: client.guilds.cache.size,
                 shards: '1'
             })
-        }).then(async res => console.log(await res.json()))
+        }).then(async res => console.log(await res.json())) */
 
   console.log(`Signed in as ${client.user.username} || Loaded [${eventFiles2.length}] event(s) & [${client.commands.size}] command(s)`);
 }
